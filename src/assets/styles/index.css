@@ -1,0 +1,175 @@
+/* Root element */
+#root {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+/* Set the width and height of the html and body elements to 100% */
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* #root element */
+#root {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+/* main element */
+main {
+	flex-grow: 1;
+	margin: 15px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+/* FullHeight class, 100% height */
+.FullHeight {
+	height: 100%;
+}
+
+/* ColumnContainer class, flex column */
+.ColumnContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	gap: 12px;
+	width: 100%;
+}
+
+/* RowContainer class, flex row */
+.RowContainer {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* FlexWrap class, wouldn't you of gussed it flex wraps */
+.FlexWrap {
+	flex-wrap: wrap;
+}
+
+/* EvenlySpaced class, wraps and sets evenly spaced*/
+.EvenlySpaced {
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+/* BlurContainer class, creates an transparent/blur box for content */
+.BlurContainer {
+	backdrop-filter: blur(2.5px);
+	background-color: rgba(40, 40, 40, 0.65);
+	border-radius: 8px;
+	padding: 8px;
+}
+
+/* BlurContainer class, aligns text to center (plus margin fix) */
+.BlurContainer h1 {
+	margin: 1px;
+	text-align: center;
+}
+
+/* UserForm class */
+.UserForm {
+	backdrop-filter: blur(2.5px);
+	background-color: rgba(40, 40, 40, 0.65);
+	border-radius: 8px;
+	padding: 16px;
+	margin: 16px auto;
+	max-width: 900px;
+}
+
+/* HeroContainer class */
+.HeroContainer {
+	background-size: cover;
+	width: 100%;
+	padding: 15px;
+	min-height: 250px;
+	border-radius: 15px;
+}
+
+/* HeroContainer image attribute class */
+.HeroContainer a {
+	color: white;
+}
+
+/* MapContainer class, ensures its visible */
+.MapContainer {
+	width: 100%;
+	height: 50vh;
+}
+
+/* .CenterDiv, text-align items (may be redundent) */
+.CenterDiv {
+	text-align: center;
+}
+
+/* PaddedForm class, does what is says and adds padding to be used with forms */
+.PaddedForm {
+	padding: 6px;
+}
+
+/*ag-theme-charlie class / AgGridReact, custom ag-grid theme (Charlie name was chosen at random) */
+.ag-theme-charlie,
+AgGridReact {
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	padding: 6px;
+}
+
+/* StylisedButton class, I saw a similar button and I just had to make it */
+.StylisedButton {
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1);
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: black;
+	border-radius: 0px 0px 0px 0px;
+	box-shadow: 5px 5px 0px 0px #FFD639;
+	padding: 16px 80px 16px 80px;
+	margin: 16px;
+	transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* StylisedButton when hovered */
+.StylisedButton:hover {
+	transform: translate(-1px, -1px);
+	/* Move button up and left */
+	box-shadow: 10px 10px 0px 0px #FFD639;
+	/* Move shadow down and right */
+	transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* StylisedButton when active (visible for like 1 frame but oh well lol) */
+.StylisedButton:active {
+	transform: translate(1px, 1px);
+	/* Move button up and left */
+	box-shadow: 8px 8px 0px 0px #FFD639;
+	transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Very Important Cat Img (Yes its a photo of my cat) */
+.ImportantCatImg {
+	width: 25%;
+	height: 100%;
+	border-radius: 0px;
+	padding: 10px;
+}
+
+/* HomePage class */
+.HomePage {
+	text-align: center;
+	padding: 10%;
+	padding-top: 0;
+}
+
+/* HomePage extra padding */
+.HomePage div {
+	padding: 2%;
+}
